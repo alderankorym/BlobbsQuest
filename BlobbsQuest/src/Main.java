@@ -10,7 +10,7 @@ public class Main extends PApplet
 	PImage Batte;
 	PImage BatteIcone;
 	//LOADING part 1
-	
+	//Test
 	boolean menu = false;
 	int menuTab;
 	
