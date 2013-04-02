@@ -24,7 +24,7 @@ public class Main extends PApplet
 	{
 		smooth();
 		frameRate(60);
-		size(640,480);
+		size(800,600);
 		
 		//LOADING part 2
 		Ground = loadImage("testfield.png");
@@ -72,7 +72,7 @@ public class Main extends PApplet
 		}
 		
 	  }
-	
+
 	public void drawCharacter(int id)
 	{
 		//rotation calculation
@@ -109,6 +109,16 @@ public class Main extends PApplet
 		popMatrix();
 	}
 
+	public void showMenu()
+	{
+		background(0);
+		
+		
+		
+		
+		
+	}
+		
 	public void keyPressed()
 	  {
 		keys[keyCode] = true;
