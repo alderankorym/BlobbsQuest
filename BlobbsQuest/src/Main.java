@@ -27,14 +27,15 @@ public class Main extends PApplet
 		size(640,480);
 		
 		//LOADING part 2
-		Ground = loadImage("G:\\ARUBSPROG\\JAVA\\BlobbsQuest\\data\\testfield.png");
-		Blobb = loadImage("G:\\ARUBSPROG\\JAVA\\BlobbsQuest\\data\\blobb.png");
-		Batte = loadImage("G:\\ARUBSPROG\\JAVA\\BlobbsQuest\\data\\batte.png");
-		BatteIcone = loadImage("G:\\ARUBSPROG\\JAVA\\BlobbsQuest\\data\\batteIcone.png");
+		Ground = loadImage("testfield.png");
+		Blobb = loadImage("blobb.png");
+		Batte = loadImage("batte.png");
+		BatteIcone = loadImage("G:batteIcone.png");
 		//LOADING part 2
 		
 		//PJ CREATION
 		perso[0] = new character(Blobb, 100, 100, 7, 200, 200);
+		perso[1] = new character(Blobb, 100, 100, 7, 200, 200);
 		
 		perso[0].weapons = new weapon[50];
 		perso[0].weapons[0] = new weapon(Batte, 70, 100, 5, 5, 5, 0);
