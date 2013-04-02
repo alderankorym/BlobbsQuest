@@ -65,7 +65,7 @@ public class Main extends PApplet
 		else
 		{
 
-			if(checkKey(KeyEvent.VK_ESCAPE))
+			if(checkKey(KeyEvent.VK_SPACE))
 				menu = !menu;
 			
 			showMenu();
