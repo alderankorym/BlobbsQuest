@@ -122,7 +122,7 @@ public class Main extends PApplet
 		rect(2,180,120,60,6,6,6,6);
 		rect(2,240,120,60,6,6,6,6);
 		//cadre droite
-		rect(124,0,516,300,6,6,6,6);
+		rect(130,0,500,300,6,6,6,6);
 		//cadre bas
 		rect(0,300,640,180,6,6,6,6);
 		//textes menu gauche
@@ -160,9 +160,17 @@ public class Main extends PApplet
 	public void showMenuEquip()
 	{
 		fill(0);
-		rect(124,0,60,60,6,6,6,6);
+		rect(180,0,60,60,6,6,6,6);
 		image(BatteIcone,130,5);
+		rect(240,0,60,60,6,6,6,6);
 		
+		rect(300,0,60,60,6,6,6,6);
+		
+		rect(360,0,60,60,6,6,6,6);
+		
+		rect(420,0,60,60,6,6,6,6);
+		
+		rect(480,0,60,60,6,6,6,6);
 	}
 	
 	public void showMenu2()
