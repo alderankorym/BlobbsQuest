@@ -30,7 +30,7 @@ public class Main extends PApplet
 		Ground = loadImage("testfield.png");
 		Blobb = loadImage("blobb.png");
 		Batte = loadImage("batte.png");
-		BatteIcone = loadImage("G:batteIcone.png");
+		BatteIcone = loadImage("batteIcone.png");
 		//LOADING part 2
 		
 		//PJ CREATION
