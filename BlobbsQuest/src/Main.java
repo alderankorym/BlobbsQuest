@@ -123,6 +123,10 @@ public class Main extends PApplet
 		//textes menu gauche
 		fill(255);
 		text("EQUIPEMENT",10,35);
+		text("OBJETS",10,95);
+		text("STATS",10,155);
+		text("PLOP4",10,215);
+		text("PLOP5",10,275);
 		
 		switch(menuTab)
 		{
@@ -130,6 +134,16 @@ public class Main extends PApplet
 			showMenuEquip();
 				break;
 			case 2 :
+			showMenu2();
+				break;
+			case 3 :
+			showMenuStats();
+				break;
+			case 4 :
+			
+				break;
+			case 5 :
+			
 				break;
 			default :
 				break;
@@ -144,6 +158,18 @@ public class Main extends PApplet
 		
 	}
 	
+	public void showMenu2()
+	{
+		
+	}
+	
+	public void showMenuStats()
+	{
+		text("HP/LIFE  " + perso[0].hp + "  /  " + perso[0].life, 130, 35);
+		text("MP/MANA  " + perso[0].mp + "  /  " + perso[0].mana, 130, 95);
+	}
+	
+	
 	public void mousePressed()
 	{
 		if(menu)
@@ -152,6 +178,10 @@ public class Main extends PApplet
 				menuTab = 1;
 			if(mouseX<120 && mouseY>60 && mouseY<120)
 				menuTab = 2;
+			if(mouseX<120 && mouseY>120 && mouseY<180)
+				menuTab = 3;
+			if(mouseX<120 && mouseY>180 && mouseY<240)
+				menuTab = 4;
 		}
 	}
 	
