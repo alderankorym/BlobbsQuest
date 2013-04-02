@@ -10,7 +10,7 @@ public class Main extends PApplet
 	PImage Batte;
 	PImage BatteIcone;
 	//LOADING part 1
-	//Test
+
 	boolean menu = false;
 	int menuTab;
 	
@@ -46,7 +46,7 @@ public class Main extends PApplet
 	  {
 		if(!menu)
 		{
-			//movement calculation
+			//interaction
 			if(checkKey(KeyEvent.VK_Z))
 				perso[0].posY -= perso[0].speed;
 			if(checkKey(KeyEvent.VK_S))
@@ -56,7 +56,7 @@ public class Main extends PApplet
 			if(checkKey(KeyEvent.VK_D))
 				perso[0].posX += perso[0].speed;
 			if(checkKey(KeyEvent.VK_TAB))
-				menu = true;
+				menu = !menu;
 		
 			//rendering
 			image(Ground,0,0);
@@ -64,6 +64,10 @@ public class Main extends PApplet
 		}
 		else
 		{
+
+			if(checkKey(KeyEvent.VK_TAB))
+				menu = !menu;
+			
 			showMenu();
 		}
 		
@@ -128,6 +132,8 @@ public class Main extends PApplet
 		text("STATS",10,155);
 		text("PLOP4",10,215);
 		text("PLOP5",10,275);
+		
+
 		
 		switch(menuTab)
 		{
