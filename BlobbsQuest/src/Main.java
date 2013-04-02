@@ -175,6 +175,7 @@ public class Main extends PApplet
 	{
 		if(menu)
 		{
+			//menu gauche
 			if(mouseX<120 && mouseY<60)
 				menuTab = 1;
 			if(mouseX<120 && mouseY>60 && mouseY<120)
@@ -183,6 +184,9 @@ public class Main extends PApplet
 				menuTab = 3;
 			if(mouseX<120 && mouseY>180 && mouseY<240)
 				menuTab = 4;
+			//menu equipement
+			//if(menuTab == 1 && mouseX>120 && mouseX<180 && mouseY<60)
+				
 		}
 	}
 	
