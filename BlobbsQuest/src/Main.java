@@ -13,6 +13,7 @@ public class Main extends PApplet
 
 	boolean menu = false;
 	int menuTab;
+	int menuHover;
 	
 	boolean[] keys = new boolean[526];
 
@@ -112,13 +113,62 @@ public class Main extends PApplet
 	public void showMenu()
 	{
 		background(0);
+		strokeWeight(2);
+		fill(0);
+		
+		if(mouseX>20 && mouseX<120 && mouseY>20 && mouseY<60)
+		{
+			stroke(255,0,0,255);
+			rect(20,20,100,40);
+			menuHover = 1;
+		}
+		
+		if(mouseX>20 && mouseX<120 && mouseY>80 && mouseY<120)
+		{
+			stroke(0,255,0,255);
+			rect(20,80,100,40);
+			menuHover = 2;
+		}
+		
+		if(mouseX>20 && mouseX<120 && mouseY>140 && mouseY<180)
+		{
+			stroke(0,0,255,255);
+			rect(20,140,100,40);
+			menuHover = 3;
+		}
+		
+		if(mouseX>20 && mouseX<120 && mouseY>200 && mouseY<240)
+		{
+			stroke(255,255,0,255);
+			rect(20,200,100,40);
+			menuHover = 4;
+		}
+		
+		stroke(200,200,200,200);
+		
+		rect(20,20,100,40);
+		rect(20,80,100,40);
+		rect(20,140,100,40);
+		rect(20,200,100,40);
 		
 		
-		
-		
+		rect(140,20,640,400);
 		
 	}
+	
+	public void mousePressed()
+	{
+		if(menuHover==1)
+			menuTab = 1;
+		if(menuHover==2)
+			menuTab = 2;
+		if(menuHover==3)
+			menuTab = 3;
+		if(menuHover==4)
+			menuTab = 4;
+	}
 		
+	//fucking magics
 	public void keyPressed()
 	  {
 		keys[keyCode] = true;
